@@ -19,5 +19,31 @@
     Output:
         Sum = 238
         Avg = 39.67
-
 */
+
+#include <stdio.h>
+
+int main() {
+    
+    int nv,i,n,sumn = 0,sum = 0 ;
+    float sum_avg = 0,sum_f = 0 ;
+    printf( "Input Value n :" ) ;
+    scanf( "%d",&nv ) ;
+
+    do {
+        while ( nv > i ) {
+            i++ ;
+            printf( "Number %d :",i ) ;
+            scanf( "%d",&n ) ;
+            sumn = sumn + n ;
+        }
+        sum = sumn ;
+        sum_f = sum ;
+        sum_avg = sum_f / nv ;
+        printf( "Sum = %d\n",sum ) ;
+        printf("Avg = %.2f",sum_avg) ;
+        break ;
+    } while (true);
+    
+    return 0;
+}
